@@ -1,0 +1,203 @@
+.businessList {
+    font-family: Arial, sans-serif;
+    line-height: 1.businessList .6;
+    color: #333;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.businessList h1 {
+    font-size: 2.5em;
+    margin: 40px 0;
+}
+
+.businessList .filters {
+    display: flex;
+     gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center; 
+    flex-direction: row;
+    width: 100%;
+}
+
+.businessList .category {
+    text-decoration: none;
+    list-style: none;
+    color: #c0392b;
+    padding: 5px 10px;
+    position: relative;
+    width: auto;
+}
+
+.businessList .category:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -40px;
+    color: #c0392b;
+}
+
+.businessList .category .all {
+    color: #666;
+}
+
+.businessList .category .all::before {
+    content: "📁";
+    margin-right: 5px;
+}
+
+.businessList .date-filters {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.businessList .date-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.businessList .date-input  input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #eee;
+}
+.businessList button {
+    width: auto;
+}
+
+.businessList .date-input input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #666;
+}
+
+.businessList .calendar-icon {
+    color: #c0392b;
+    cursor: pointer;
+}
+
+.businessList .filter-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.businessList .reset-filter {
+    color: #c0392b;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.businessList .timeline {
+    position: relative;
+    padding-left: 50px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.businessList .timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #eee;
+}
+
+.businessList .business {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.businessList .business::before {
+    content: "";
+    position: absolute;
+    left: -54px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+}
+
+.businessList .business-date {
+    text-align: center;
+    min-width: 100px;
+}
+
+.businessList .business-day {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #666;
+}
+
+.businessList .business-month,
+.businessList .business-year {
+    color: #666;
+    text-transform: uppercase;
+}
+
+.businessList .business-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.businessList .business-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.businessList .business-content {
+    flex-grow: 1;
+    margin-top: -28px;
+    width: 100%;
+}
+
+.businessList .business-title {
+    font-size: 1.5em;
+    color: #c0392b;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.businessList .business-info {
+    color: #666;
+}
+
+.businessList .business-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.businessList .more-info {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: 1px solid #3498db;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.businessList .more-info:hover {
+    background-color: #3498db;
+    color: white;
+}
